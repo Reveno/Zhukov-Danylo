@@ -1,0 +1,142 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 1; 
+    padding-left: 5px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2%;
+    right: 2%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1; 
+}
+
+.container h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center; 
+}
+
+.container h4 {
+    text-align: center;
+}
+
+
+.container p {
+    padding: 10px 60px 0px 50px;
+    text-align: left;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.gallery img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+}
+
+.link_button {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 275px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.link_button:hover {
+    background-color: #45a049; 
+}
+
+.fraction-info-svadia {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.king-info-svadia img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.king-info-svadia p {
+    margin-top: 10px;
+}
+
+.fraction-info-rodok {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.king-info-rodok img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.king-info-rodok p {
+    margin-top: 10px;
+}
+
+.fraction-info-vegir {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.king-info-vegir img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.king-info-vegir p {
+    margin-top: 10px;
+}
